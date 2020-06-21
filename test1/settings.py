@@ -64,7 +64,6 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
 ]
 CORS_ORIGIN_WHITELIST = [
-    "https://example.com",
     "https://sub.example.com",
     "http://localhost:3000",
     "http://127.0.0.1:9000",
