@@ -212,7 +212,7 @@ def measures(request):
     array = {"ageyears":age,"bmi":BMI,"systolic":systolic,'diastolic':diastolic,"smoker":real_smoke,"diabetes":real_gluc,"cholesterol":real_chol}
     print(array)
     # mdl = joblib.load()
-    with open('model_jmaiii_version','rb') as f:
+    with open('CRU\model_jmaiii_version','rb') as f:
         model = pickle.load(f)
     single = np.array([int(age),int(BMI),int(systolic),int(diastolic),int(real_smoke),int(real_gluc),int(real_chol)])
     single_pred = pd.DataFrame(single)
